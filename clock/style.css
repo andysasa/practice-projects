@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: url("sea-otter.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgba(11, 170, 233, 0.781);
+    font-family: sans-serif;
+
+}
+
+.clock {
+    position: absolute;
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    padding: 2em;
+    border: 2em solid white;
+    bottom: 2.2%;
+    right: 1.5%;
+    box-shadow: 0 0 25px rgb(11, 115, 233),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 25px rgb(11, 152, 233);
+        
+}
+
+.clockface {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transform: translateY(-4px);
+}
+
+
+.hand {
+    position: absolute;
+    height: 8px;
+    width: 50%;
+    top: 50%;
+    background: black;
+    border-radius: 5px;
+    transform-origin: 100%; /* pivot point on the very right, 50% pivot point is in the middle */
+    transform: rotate(90deg);
+}
+
+#hour-hand {
+    left: 20%;
+    width: 30%;
+    background: black;
+}
+
+.digital {
+    position: relative;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    color: white;
+    top: -5px;
+    border-radius: 20%;
+    text-shadow: 2px 2px 2px rgb(11, 115, 233);
+
+    -webkit-animation: digital 1s ease-in-out infinite alternate;
+    -moz-animation: digital 1s ease-in-out infinite alternate;
+    animation: digital 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes digital {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 60px rgb(11, 115, 233), 0 0 40px rgb(11, 115, 233), 0 0 50px rgb(11, 115, 233), 0 0 60px rgb(11, 115, 233), 0 0 70px rgb(11, 115, 233);
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px rgb(10, 130, 221), 0 0 40px rgb(10, 148, 221), 0 0 50px rgb(10, 148, 221), 0 0 60px rgb(10, 148, 221), 0 0 70px rgb(10, 148, 221), 0 0 80px rgb(10, 148, 221);
+    }
+  }

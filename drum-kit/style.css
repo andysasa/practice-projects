@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+#instruct {
+    font: 2em;
+    color: white;
+    padding: 2px;
+    position: relative;
+    text-align: center;
+    top: 33vh;
+    font-size: 2em;
+    text-transform: uppercase;
+    border: .2em solid rgb(25, 180, 241);
+    border-radius: 1em;
+}
+
+.keys {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.key {
+    border: .2em solid rgb(25, 180, 241);
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    padding: 1em 0.5em;
+    margin: 1em;
+    width: 5em;
+    text-align: center;
+    color: white;
+    text-shadow: 0.8em 0.5em 0.18em rgb(25, 180, 241);
+    transition: all 0.07s ease;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+    display: block;
+    font-size: 2em;
+}
+
+.sound {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
