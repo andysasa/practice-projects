@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+    background: #ff6f61;
+    font-family: "helvetica neue";
+    font-size: 20px;
+    font-weight: 200;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box'
+}
+
+input {
+    width: 100%;
+    padding: 20px;
+}
+
+.search-form {
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+input.search {
+    text-align: center;
+    font-size: 35px;
+    border: 10px solid rgb(240, 240, 240);
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.12), inset 0 0 5px rgba(0, 0, 0,0.205);
+    border-radius: 5px;
+    z-index: 2;
+    /*position: relative, left, top, outline, margin, width*/
+}
+
+.suggestion {
+    margin: 0;
+    padding: 0;    
+}
+
