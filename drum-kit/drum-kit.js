@@ -12,7 +12,7 @@ function playSound(event) {
 // remove animation
 function removeTransition(event) {
     if (event.propertyName !== 'transform') return; // skip if not a 'transform'
-    this.classList.remove('playing'); // this is what was called against it, in this case, it's key (ln 17 )
+    this.classList.remove('playing'); // this is what was called against it, in this case, it's key (ln 19)
 }
 
 const keys = document.querySelectorAll('.key');

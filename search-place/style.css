@@ -21,17 +21,53 @@ input {
 }
 
 input.search {
+    position:relative;
     text-align: center;
     font-size: 35px;
     border: 10px solid rgb(240, 240, 240);
     box-shadow: 0 0 5px rgb(0, 0, 0, 0.12), inset 0 0 5px rgba(0, 0, 0,0.205);
     border-radius: 5px;
     z-index: 2;
-    /*position: relative, left, top, outline, margin, width*/
+    /*left, top, outline, margin, width*/
 }
 
-.suggestion {
+.suggestions {
     margin: 0;
-    padding: 0;    
+    padding: 0;
+    position: relative;
+    /*perspective: 20px;*/
+}
+
+.suggestions li {
+    background: white;
+    list-style: none;
+    border-bottom: 1px solid #D8D8D8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+    margin: 0;
+    padding: 20px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    transition: background 0.2s;
+    position: relative;
+    left: 30px;
+}
+
+.suggestions li:nth-child(even) {
+    transform: perspective(100px) rotateX(3deg) scale(1.001) translateY(-1px);
+    background: linear-gradient(to bottom,  #ffffff 0%,#EFEFEF 100%);
+}
+
+.suggestions li:nth-child(odd) {
+    transform: perspective(100px) rotateX(-3deg);
+    background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
+}
+
+span.population {
+    font-size: 15px;
+}
+
+.hl {
+    background: #ffc600;
 }
 
