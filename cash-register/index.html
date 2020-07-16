@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Cash Register</title>
+</head>
+<body>
+    <div class="container">
+        <div class="register">
+            <h2>Cash Register</h2>
+            <div class="item-price">
+                <p>Item Price</p>
+                <input type="number" name="item-amt" id="item-amt" value="0">
+            </div>
+            <div class="cash-paid">
+                <p>Amount Paid</p>
+                <input type="number" name="amt-paid" id="amt-paid" value="0">
+            </div>
+        </div>
+        <div class="change">
+            <h2>Change</h2>
+            <div class="change__status"><span>Status: </span><input type="text" class="status" name="status" id="status"></div>
+
+            <div class="change__type"></div>
+                <ul>
+                    <li class="change__hundred">$100</li>
+                    <li class="change__twenty">$20</li>
+                    <li class="change__ten">$10</li>
+                    <li class="change__five">$5</li>
+                    <li class="change__one">$1</li>
+                    <li class="change__quarter">¢25</li>
+                    <li class="change__dime">¢10</li>
+                    <li class="change__nickle">¢5</li>
+                    <li class="change__penny">¢1</li>
+                </ul>
+            <div>
+                <ul class="change__qty">
+                    <li class="qty">Qty: 0</li>
+                    <li class="qty">Qty: 0</li>
+                    <li class="qty">Qty: 0</li>
+                    <li class="qty">Qty: 0</li>
+                    <li class="qty">Qty: 0</li>
+                    <li class="qty">Qty: 0</li>
+                    <li class="qty">Qty: 0</li>
+                    <li class="qty">Qty: 0</li>
+                    <li class="qty">Qty: 0</li>
+                </ul>
+            </div>
+                
+            <div>
+                <ul class="change__total">
+                    <li class="total">Total: $0.00</li>
+                    <li class="total">Total: $0.00</li>
+                    <li class="total">Total: $0.00</li>
+                    <li class="total">Total: $0.00</li>
+                    <li class="total">Total: $0.00</li>
+                    <li class="total">Total: $0.00</li>
+                    <li class="total">Total: $0.00</li>
+                    <li class="total">Total: $0.00</li>
+                    <li class="total">Total: $0.00</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="cid">
+            <h2>Cash in Drawer</h2>
+            <ul>
+                <li class="cid__item"><span>one hundred</span> <input type="number" class="amount" id="amount" value="100"></li>
+                <li class="cid__item">twenty<input type="number" class="amount" id="amount" value="60"></li>
+                <li class="cid__item">ten<input type="number" class="amount" id="amount" value="20"></li>
+                <li class="cid__item">five<input type="number" class="amount" id="amount" value="55"></li>
+                <li class="cid__item">one<input type="number" class="amount" id="amount" value="90"></li>
+                <li class="cid__item">quarter<input type="number" class="amount" id="amount" value="4.25"></li>
+                <li class="cid__item">nickle<input type="number" class="amount" id="amount" value="3.1"></li>
+                <li class="cid__item">dime<input type="number" class="amount" id="amount" value="2.05"></li>
+                <li class="cid__item">penny<input type="number" class="amount" id="amount" value="1.01"></li>
+            </ul>
+        </div>
+    </div>
+    <script src="cash-register.js"></script>
+</body>
+</html>

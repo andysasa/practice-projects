@@ -1,0 +1,89 @@
+:root {
+    --yellow: #ffc600;
+    --black: #272727;
+}
+
+html, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f5f2d0;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.container {
+    margin-top: 2rem;
+}
+.todo {
+    margin-top: 2rem;
+    width: 90%;
+    background: var(--black);
+    color: white;
+    text-align: center;
+    height: 70vh;
+    border: 5px solid white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 960px;
+    min-width: 480px;
+    overflow: scroll;
+}
+
+.todo__title {
+    padding: 1rem;
+    margin: 10px;
+}
+
+.todo__input {
+    text-align: center;
+    padding: 10px 0;
+    width: 80%;
+    outline: none;
+    font-size: 1rem;
+}
+
+.todo__list {
+    list-style: none;
+    text-align: left;
+}
+
+.todo__item {
+    border-bottom: 1px solid var(--yellow);
+    margin: 5px 10%;
+    padding: 10px;
+    position: relative;
+}
+
+.todo__item:hover {
+    cursor: default;
+}
+
+.todo__remove {
+    padding: 1px 5px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 100%;
+    outline: none;
+    position: absolute;
+    right: 5px;
+}
+
+.todo__remove:hover {
+    background: white;
+    color: black;
+}
+
+.todo__remove:active {
+    background: #ff6f61;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #aaa;
+    border-bottom: 1px solid rgba(65, 52, 32);
+}

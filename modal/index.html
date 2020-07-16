@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal</title>
+</head>
+<body>
+    <button class="trigger">Join!</button>
+
+    <div class="modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h1 class="modal__title">What is Andy Doing NOW?!</h1>
+                <button type="button" class="close">
+                    <span class="x">&times;
+                    </span>
+                </button>
+            </div>
+            <div class="modal__body">
+                <h3>Together, we can solve veterinary suicide.</h3>
+                <p>Find out what Andy is doing to help!</p>
+                <form class="form" action="/" method="">
+                    <label for="email">Email:<input class="form__email" type="email" name="email" id="email" placeholder="Your email..."></label>
+                    <label for="submit">
+                        <input type="submit" value="Join" class="form__submit"></label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>    
+</body>
+</html>

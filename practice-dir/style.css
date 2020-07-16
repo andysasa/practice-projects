@@ -1,0 +1,18 @@
+html {
+    box-sizing: border-box;
+}
+.trial {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#hello {
+    border: 1px solid black;
+}
+.trial2 {
+    text-align: left;
+}
+
+.trial3 {
+    margin: 10px;
+    padding: 10px;
+}
